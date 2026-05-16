@@ -1,0 +1,657 @@
+{
+  "web": [],
+  "academic": [
+    {
+      "title": "Comparison of Self-Supervised Speech Pre-Training Methods on Flemish Dutch",
+      "link": "http://arxiv.org/abs/2109.14357v1",
+      "snippet": "Recent research in speech processing exhibits a growing interest in unsupervised and self-supervised representation learning from unlabelled data to alleviate the need for large amounts of annotated data. We investigate several popular pre-training methods and apply them to Flemish Dutch. We compare",
+      "authors": [
+        "Jakob Poncelet",
+        "Hugo Van hamme"
+      ],
+      "published": "2021-09-29",
+      "source": "arxiv"
+    },
+    {
+      "title": "Reinforcement Learning Based Speech Enhancement for Robust Speech Recognition",
+      "link": "http://arxiv.org/abs/1811.04224v1",
+      "snippet": "Conventional deep neural network (DNN)-based speech enhancement (SE) approaches aim to minimize the mean square error (MSE) between enhanced speech and clean reference. The MSE-optimized model may not directly improve the performance of an automatic speech recognition (ASR) system. If the target is ",
+      "authors": [
+        "Yih-Liang Shen",
+        "Chao-Yuan Huang",
+        "Syu-Siang Wang",
+        "Yu Tsao",
+        "Hsin-Min Wang",
+        "Tai-Shih Chi"
+      ],
+      "published": "2018-11-10",
+      "source": "arxiv"
+    },
+    {
+      "title": "A Density Ratio Approach to Language Model Fusion in End-To-End Automatic Speech Recognition",
+      "link": "http://arxiv.org/abs/2002.11268v3",
+      "snippet": "This article describes a density ratio approach to integrating external Language Models (LMs) into end-to-end models for Automatic Speech Recognition (ASR). Applied to a Recurrent Neural Network Transducer (RNN-T) ASR model trained on a given domain, a matched in-domain RNN-LM, and a target domain R",
+      "authors": [
+        "Erik McDermott",
+        "Hasim Sak",
+        "Ehsan Variani"
+      ],
+      "published": "2020-02-26",
+      "source": "arxiv"
+    },
+    {
+      "title": "Towards a Large Language-Vision Question Answering Model for MSTAR Automatic Target Recognition",
+      "link": "http://arxiv.org/abs/2605.10772v1",
+      "snippet": "Large language-vision models (LLVM), such as OpenAI's ChatGPT and GPT-4, have gained prominence as powerful tools for analyzing text and imagery. The merging of these data domains represents a significant paradigm shift with far-reaching implications for automatic target recognition (ATR). Recent tr",
+      "authors": [
+        "David F. Ramirez",
+        "Tim L. Overman",
+        "Kristen Jaskie",
+        "Marv Kleine",
+        "Andreas Spanias"
+      ],
+      "published": "2026-05-11",
+      "source": "arxiv"
+    },
+    {
+      "title": "Leveraging End-to-End Speech Recognition with Neural Architecture Search",
+      "link": "http://arxiv.org/abs/1912.05946v2",
+      "snippet": "Deep neural networks (DNNs) have been demonstrated to outperform many traditional machine learning algorithms in Automatic Speech Recognition (ASR). In this paper, we show that a large improvement in the accuracy of deep speech models can be achieved with effective Neural Architecture Optimization a",
+      "authors": [
+        "Ahmed Baruwa",
+        "Mojeed Abisiga",
+        "Ibrahim Gbadegesin",
+        "Afeez Fakunle"
+      ],
+      "published": "2019-12-11",
+      "source": "arxiv"
+    },
+    {
+      "title": "Multi-task Language Modeling for Improving Speech Recognition of Rare Words",
+      "link": "http://arxiv.org/abs/2011.11715v4",
+      "snippet": "End-to-end automatic speech recognition (ASR) systems are increasingly popular due to their relative architectural simplicity and competitive performance. However, even though the average accuracy of these systems may be high, the performance on rare content words often lags behind hybrid ASR system",
+      "authors": [
+        "Chao-Han Huck Yang",
+        "Linda Liu",
+        "Ankur Gandhe",
+        "Yile Gu",
+        "Anirudh Raju",
+        "Denis Filimonov",
+        "Ivan Bulyko"
+      ],
+      "published": "2020-11-23",
+      "source": "arxiv"
+    },
+    {
+      "title": "UTRNet: High-Resolution Urdu Text Recognition In Printed Documents",
+      "link": "http://arxiv.org/abs/2306.15782v3",
+      "snippet": "In this paper, we propose a novel approach to address the challenges of printed Urdu text recognition using high-resolution, multi-scale semantic feature extraction. Our proposed UTRNet architecture, a hybrid CNN-RNN model, demonstrates state-of-the-art performance on benchmark datasets. To address ",
+      "authors": [
+        "Abdur Rahman",
+        "Arjun Ghosh",
+        "Chetan Arora"
+      ],
+      "published": "2023-06-27",
+      "source": "arxiv"
+    },
+    {
+      "title": "The Effect of Silence Feature in Dimensional Speech Emotion Recognition",
+      "link": "http://arxiv.org/abs/2003.01277v3",
+      "snippet": "Silence is a part of human-to-human communication, which can be a clue for human emotion perception. For automatic emotion recognition by a computer, it is not clear whether silence is useful to determine human emotion within a speech. This paper presents an investigation of the effect of using sile",
+      "authors": [
+        "Bagus Tris Atmaja",
+        "Masato Akagi"
+      ],
+      "published": "2020-03-03",
+      "source": "arxiv"
+    },
+    {
+      "title": "Advancing automatic speech recognition using feature fusion with self-supervised learning features: A case study on Fearless Steps Apollo corpus",
+      "link": "http://arxiv.org/abs/2604.22203v1",
+      "snippet": "Using self-supervised learning (SSL) models has significantly improved performance for downstream speech tasks, surpassing the capabilities of traditional hand-crafted features. This study investigates the amalgamation of SSL models, with the aim to leverage both their individual strengths and refin",
+      "authors": [
+        "Szu-Jui Chen",
+        "John H. L. Hansen"
+      ],
+      "published": "2026-04-24",
+      "source": "arxiv"
+    },
+    {
+      "title": "Cross Lingual Speech Emotion Recognition: Urdu vs. Western Languages",
+      "link": "http://arxiv.org/abs/1812.10411v2",
+      "snippet": "Cross-lingual speech emotion recognition is an important task for practical applications. The performance of automatic speech emotion recognition systems degrades in cross-corpus scenarios, particularly in scenarios involving multiple languages or a previously unseen language such as Urdu for which ",
+      "authors": [
+        "Siddique Latif",
+        "Adnan Qayyum",
+        "Muhammad Usman",
+        "Junaid Qadir"
+      ],
+      "published": "2018-12-15",
+      "source": "arxiv"
+    },
+    {
+      "title": "Data Augmentation For Children's Speech Recognition -- The \"Ethiopian\" System For The SLT 2021 Children Speech Recognition Challenge",
+      "link": "http://arxiv.org/abs/2011.04547v1",
+      "snippet": "This paper presents the \"Ethiopian\" system for the SLT 2021 Children Speech Recognition Challenge. Various data processing and augmentation techniques are proposed to tackle children's speech recognition problem, especially the lack of the children's speech recognition training data issue. Detailed ",
+      "authors": [
+        "Guoguo Chen",
+        "Xingyu Na",
+        "Yongqing Wang",
+        "Zhiyong Yan",
+        "Junbo Zhang",
+        "Sifan Ma",
+        "Yujun Wang"
+      ],
+      "published": "2020-11-09",
+      "source": "arxiv"
+    },
+    {
+      "title": "Curriculum Learning for Speech Emotion Recognition from Crowdsourced Labels",
+      "link": "http://arxiv.org/abs/1805.10339v1",
+      "snippet": "This study introduces a method to design a curriculum for machine-learning to maximize the efficiency during the training process of deep neural networks (DNNs) for speech emotion recognition. Previous studies in other machine-learning problems have shown the benefits of training a classifier follow",
+      "authors": [
+        "Reza Lotfian",
+        "Carlos Busso"
+      ],
+      "published": "2018-05-25",
+      "source": "arxiv"
+    },
+    {
+      "title": "Recurrent Neural Network Transducer for Audio-Visual Speech Recognition",
+      "link": "http://arxiv.org/abs/1911.04890v1",
+      "snippet": "This work presents a large-scale audio-visual speech recognition system based on a recurrent neural network transducer (RNN-T) architecture. To support the development of such a system, we built a large audio-visual (A/V) dataset of segmented utterances extracted from YouTube public videos, leading ",
+      "authors": [
+        "Takaki Makino",
+        "Hank Liao",
+        "Yannis Assael",
+        "Brendan Shillingford",
+        "Basilio Garcia",
+        "Otavio Braga",
+        "Olivier Siohan"
+      ],
+      "published": "2019-11-08",
+      "source": "arxiv"
+    },
+    {
+      "title": "Unsupervised Automatic Speech Recognition: A Review",
+      "link": "http://arxiv.org/abs/2106.04897v2",
+      "snippet": "Automatic Speech Recognition (ASR) systems can be trained to achieve remarkable performance given large amounts of manually transcribed speech, but large labeled data sets can be difficult or expensive to acquire for all languages of interest. In this paper, we review the research literature to iden",
+      "authors": [
+        "Hanan Aldarmaki",
+        "Asad Ullah",
+        "Nazar Zaki"
+      ],
+      "published": "2021-06-09",
+      "source": "arxiv"
+    },
+    {
+      "title": "From Statistical Methods to Pre-Trained Models; A Survey on Automatic Speech Recognition for Resource Scarce Urdu Language",
+      "link": "http://arxiv.org/abs/2411.14493v1",
+      "snippet": "Automatic Speech Recognition (ASR) technology has witnessed significant advancements in recent years, revolutionizing human-computer interactions. While major languages have benefited from these developments, lesser-resourced languages like Urdu face unique challenges. This paper provides an extensi",
+      "authors": [
+        "Muhammad Sharif",
+        "Zeeshan Abbas",
+        "Jiangyan Yi",
+        "Chenglin Liu"
+      ],
+      "published": "2024-11-20",
+      "source": "arxiv"
+    },
+    {
+      "title": "Transfer Learning from Visual Speech Recognition to Mouthing Recognition in German Sign Language",
+      "link": "http://arxiv.org/abs/2505.13784v2",
+      "snippet": "Sign Language Recognition (SLR) systems primarily focus on manual gestures, but non-manual features such as mouth movements, specifically mouthing, provide valuable linguistic information. This work directly classifies mouthing instances to their corresponding words in the spoken language while expl",
+      "authors": [
+        "Dinh Nam Pham",
+        "Eleftherios Avramidis"
+      ],
+      "published": "2025-05-20",
+      "source": "arxiv"
+    },
+    {
+      "title": "Interpreting the Role of Visemes in Audio-Visual Speech Recognition",
+      "link": "http://arxiv.org/abs/2509.16023v1",
+      "snippet": "Audio-Visual Speech Recognition (AVSR) models have surpassed their audio-only counterparts in terms of performance. However, the interpretability of AVSR systems, particularly the role of the visual modality, remains under-explored. In this paper, we apply several interpretability techniques to exam",
+      "authors": [
+        "Aristeidis Papadopoulos",
+        "Naomi Harte"
+      ],
+      "published": "2025-09-19",
+      "source": "arxiv"
+    },
+    {
+      "title": "Omni-Router: Sharing Routing Decisions in Sparse Mixture-of-Experts for Speech Recognition",
+      "link": "http://arxiv.org/abs/2507.05724v3",
+      "snippet": "Mixture-of-experts (MoE) architectures have expanded from language modeling to automatic speech recognition (ASR). Traditional MoE methods, such as the Switch Transformer, route experts independently within each layer. Our analysis reveals that routers in most layers make expert choices that are not",
+      "authors": [
+        "Zijin Gu",
+        "Tatiana Likhomanenko",
+        "Navdeep Jaitly"
+      ],
+      "published": "2025-07-08",
+      "source": "arxiv"
+    },
+    {
+      "title": "Supervised Contrastive Learning for Accented Speech Recognition",
+      "link": "http://arxiv.org/abs/2107.00921v1",
+      "snippet": "Neural network based speech recognition systems suffer from performance degradation due to accented speech, especially unfamiliar accents. In this paper, we study the supervised contrastive learning framework for accented speech recognition. To build different views (similar \"positive\" data samples)",
+      "authors": [
+        "Tao Han",
+        "Hantao Huang",
+        "Ziang Yang",
+        "Wei Han"
+      ],
+      "published": "2021-07-02",
+      "source": "arxiv"
+    },
+    {
+      "title": "The CUHK-TUDELFT System for The SLT 2021 Children Speech Recognition Challenge",
+      "link": "http://arxiv.org/abs/2011.06239v1",
+      "snippet": "This technical report describes our submission to the 2021 SLT Children Speech Recognition Challenge (CSRC) Track 1. Our approach combines the use of a joint CTC-attention end-to-end (E2E) speech recognition framework, transfer learning, data augmentation and development of various language models. ",
+      "authors": [
+        "Si-Ioi Ng",
+        "Wei Liu",
+        "Zhiyuan Peng",
+        "Siyuan Feng",
+        "Hing-Pang Huang",
+        "Odette Scharenborg",
+        "Tan Lee"
+      ],
+      "published": "2020-11-12",
+      "source": "arxiv"
+    },
+    {
+      "title": "End-to-end Audiovisual Speech Activity Detection with Bimodal Recurrent Neural Models",
+      "link": "http://arxiv.org/abs/1809.04553v1",
+      "snippet": "Speech activity detection (SAD) plays an important role in current speech processing systems, including automatic speech recognition (ASR). SAD is particularly difficult in environments with acoustic noise. A practical solution is to incorporate visual information, increasing the robustness of the S",
+      "authors": [
+        "Fei Tao",
+        "Carlos Busso"
+      ],
+      "published": "2018-09-12",
+      "source": "arxiv"
+    },
+    {
+      "title": "Thank you for Attention: A survey on Attention-based Artificial Neural Networks for Automatic Speech Recognition",
+      "link": "http://arxiv.org/abs/2102.07259v1",
+      "snippet": "Attention is a very popular and effective mechanism in artificial neural network-based sequence-to-sequence models. In this survey paper, a comprehensive review of the different attention models used in developing automatic speech recognition systems is provided. The paper focuses on the development",
+      "authors": [
+        "Priyabrata Karmakar",
+        "Shyh Wei Teng",
+        "Guojun Lu"
+      ],
+      "published": "2021-02-14",
+      "source": "arxiv"
+    },
+    {
+      "title": "BERSting at the Screams: A Benchmark for Distanced, Emotional and Shouted Speech Recognition",
+      "link": "http://arxiv.org/abs/2505.00059v2",
+      "snippet": "Some speech recognition tasks, such as automatic speech recognition (ASR), are approaching or have reached human performance in many reported metrics. Yet, they continue to struggle in complex, real-world, situations, such as with distanced speech. Previous challenges have released datasets to addre",
+      "authors": [
+        "Paige Tutt\u00f6s\u00ed",
+        "Mantaj Dhillon",
+        "Luna Sang",
+        "Shane Eastwood",
+        "Poorvi Bhatia",
+        "Quang Minh Dinh",
+        "Avni Kapoor",
+        "Yewon Jin",
+        "Angelica Lim"
+      ],
+      "published": "2025-04-30",
+      "source": "arxiv"
+    },
+    {
+      "title": "Boosting Norwegian Automatic Speech Recognition",
+      "link": "http://arxiv.org/abs/2307.01672v1",
+      "snippet": "In this paper, we present several baselines for automatic speech recognition (ASR) models for the two official written languages in Norway: Bokm\u00e5l and Nynorsk. We compare the performance of models of varying sizes and pre-training approaches on multiple Norwegian speech datasets. Additionally, we me",
+      "authors": [
+        "Javier de la Rosa",
+        "Rolv-Arild Braaten",
+        "Per Egil Kummervold",
+        "Freddy Wetjen",
+        "Svein Arne Brygfjeld"
+      ],
+      "published": "2023-07-04",
+      "source": "arxiv"
+    },
+    {
+      "title": "Phonetically-Oriented Word Error Alignment for Speech Recognition Error Analysis in Speech Translation",
+      "link": "http://arxiv.org/abs/1904.11024v1",
+      "snippet": "We propose a variation to the commonly used Word Error Rate (WER) metric for speech recognition evaluation which incorporates the alignment of phonemes, in the absence of time boundary information. After computing the Levenshtein alignment on words in the reference and hypothesis transcripts, spans ",
+      "authors": [
+        "Nicholas Ruiz",
+        "Marcello Federico"
+      ],
+      "published": "2019-04-24",
+      "source": "arxiv"
+    },
+    {
+      "title": "Acoustic modeling for Overlapping Speech Recognition: JHU Chime-5 Challenge System",
+      "link": "http://arxiv.org/abs/2405.11078v1",
+      "snippet": "This paper summarizes our acoustic modeling efforts in the Johns Hopkins University speech recognition system for the CHiME-5 challenge to recognize highly-overlapped dinner party speech recorded by multiple microphone arrays. We explore data augmentation approaches, neural network architectures, fr",
+      "authors": [
+        "Vimal Manohar",
+        "Szu-Jui Chen",
+        "Zhiqi Wang",
+        "Yusuke Fujita",
+        "Shinji Watanabe",
+        "Sanjeev Khudanpur"
+      ],
+      "published": "2024-05-17",
+      "source": "arxiv"
+    },
+    {
+      "title": "COCO-Urdu: A Large-Scale Urdu Image-Caption Dataset with Multimodal Quality Estimation",
+      "link": "http://arxiv.org/abs/2509.09014v1",
+      "snippet": "Urdu, spoken by over 250 million people, remains critically under-served in multimodal and vision-language research. The absence of large-scale, high-quality datasets has limited the development of Urdu-capable systems and reinforced biases in multilingual vision-language models trained primarily on",
+      "authors": [
+        "Umair Hassan"
+      ],
+      "published": "2025-09-10",
+      "source": "arxiv"
+    },
+    {
+      "title": "Urdu Speech and Text Based Sentiment Analyzer",
+      "link": "http://arxiv.org/abs/2207.09163v1",
+      "snippet": "Discovering what other people think has always been a key aspect of our information-gathering strategy. People can now actively utilize information technology to seek out and comprehend the ideas of others, thanks to the increased availability and popularity of opinion-rich resources such as online ",
+      "authors": [
+        "Waqar Ahmad",
+        "Maryam Edalati"
+      ],
+      "published": "2022-07-19",
+      "source": "arxiv"
+    },
+    {
+      "title": "SpeechPrompt: Prompting Speech Language Models for Speech Processing Tasks",
+      "link": "http://arxiv.org/abs/2408.13040v1",
+      "snippet": "Prompting has become a practical method for utilizing pre-trained language models (LMs). This approach offers several advantages. It allows an LM to adapt to new tasks with minimal training and parameter updates, thus achieving efficiency in both storage and computation. Additionally, prompting modi",
+      "authors": [
+        "Kai-Wei Chang",
+        "Haibin Wu",
+        "Yu-Kai Wang",
+        "Yuan-Kuei Wu",
+        "Hua Shen",
+        "Wei-Cheng Tseng",
+        "Iu-thing Kang",
+        "Shang-Wen Li",
+        "Hung-yi Lee"
+      ],
+      "published": "2024-08-23",
+      "source": "arxiv"
+    },
+    {
+      "title": "Discovering Phonetic Inventories with Crosslingual Automatic Speech Recognition",
+      "link": "http://arxiv.org/abs/2201.11207v2",
+      "snippet": "The high cost of data acquisition makes Automatic Speech Recognition (ASR) model training problematic for most existing languages, including languages that do not even have a written script, or for which the phone inventories remain unknown. Past works explored multilingual training, transfer learni",
+      "authors": [
+        "Piotr \u017belasko",
+        "Siyuan Feng",
+        "Laureano Moro Velazquez",
+        "Ali Abavisani",
+        "Saurabhchand Bhati",
+        "Odette Scharenborg",
+        "Mark Hasegawa-Johnson",
+        "Najim Dehak"
+      ],
+      "published": "2022-01-26",
+      "source": "arxiv"
+    },
+    {
+      "title": "Automatic context window composition for distant speech recognition",
+      "link": "http://arxiv.org/abs/1805.10498v1",
+      "snippet": "Distant speech recognition is being revolutionized by deep learning, that has contributed to significantly outperform previous HMM-GMM systems. A key aspect behind the rapid rise and success of DNNs is their ability to better manage large time contexts. With this regard, asymmetric context windows t",
+      "authors": [
+        "Mirco Ravanelli",
+        "Maurizio Omologo"
+      ],
+      "published": "2018-05-26",
+      "source": "arxiv"
+    },
+    {
+      "title": "Visualizing Automatic Speech Recognition -- Means for a Better Understanding?",
+      "link": "http://arxiv.org/abs/2202.00673v1",
+      "snippet": "Automatic speech recognition (ASR) is improving ever more at mimicking human speech processing. The functioning of ASR, however, remains to a large extent obfuscated by the complex structure of the deep neural networks (DNNs) they are based on. In this paper, we show how so-called attribution method",
+      "authors": [
+        "Karla Markert",
+        "Romain Parracone",
+        "Mykhailo Kulakov",
+        "Philip Sperl",
+        "Ching-Yu Kao",
+        "Konstantin B\u00f6ttinger"
+      ],
+      "published": "2022-02-01",
+      "source": "arxiv"
+    },
+    {
+      "title": "Dataset and Benchmark for Urdu Natural Scenes Text Detection, Recognition and Visual Question Answering",
+      "link": "http://arxiv.org/abs/2405.12533v1",
+      "snippet": "The development of Urdu scene text detection, recognition, and Visual Question Answering (VQA) technologies is crucial for advancing accessibility, information retrieval, and linguistic diversity in digital content, facilitating better understanding and interaction with Urdu-language visual data. Th",
+      "authors": [
+        "Hiba Maryam",
+        "Ling Fu",
+        "Jiajun Song",
+        "Tajrian ABM Shafayet",
+        "Qidi Luo",
+        "Xiang Bai",
+        "Yuliang Liu"
+      ],
+      "published": "2024-05-21",
+      "source": "arxiv"
+    },
+    {
+      "title": "Survey of End-to-End Multi-Speaker Automatic Speech Recognition for Monaural Audio",
+      "link": "http://arxiv.org/abs/2505.10975v2",
+      "snippet": "Monaural multi-speaker automatic speech recognition (ASR) remains challenging due to data scarcity and the intrinsic difficulty of recognizing and attributing words to individual speakers, particularly in overlapping speech. Recent advances have driven the shift from cascade systems to end-to-end (E",
+      "authors": [
+        "Xinlu He",
+        "Jacob Whitehill"
+      ],
+      "published": "2025-05-16",
+      "source": "arxiv"
+    },
+    {
+      "title": "Sequence to Sequence Neural Speech Synthesis with Prosody Modification Capabilities",
+      "link": "http://arxiv.org/abs/1909.10302v1",
+      "snippet": "Modern sequence to sequence neural TTS systems provide close to natural speech quality. Such systems usually comprise a network converting linguistic/phonetic features sequence to an acoustic features sequence, cascaded with a neural vocoder. The generated speech prosody (i.e. phoneme durations, pit",
+      "authors": [
+        "Slava Shechtman",
+        "Alex Sorin"
+      ],
+      "published": "2019-09-23",
+      "source": "arxiv"
+    },
+    {
+      "title": "Exploring Gender Disparities in Automatic Speech Recognition Technology",
+      "link": "http://arxiv.org/abs/2502.18434v1",
+      "snippet": "This study investigates factors influencing Automatic Speech Recognition (ASR) systems' fairness and performance across genders, beyond the conventional examination of demographics. Using the LibriSpeech dataset and the Whisper small model, we analyze how performance varies across different gender r",
+      "authors": [
+        "Hend ElGhazaly",
+        "Bahman Mirheidari",
+        "Nafise Sadat Moosavi",
+        "Heidi Christensen"
+      ],
+      "published": "2025-02-25",
+      "source": "arxiv"
+    },
+    {
+      "title": "Double Multi-Head Attention Multimodal System for Odyssey 2024 Speech Emotion Recognition Challenge",
+      "link": "http://arxiv.org/abs/2406.10598v1",
+      "snippet": "As computer-based applications are becoming more integrated into our daily lives, the importance of Speech Emotion Recognition (SER) has increased significantly. Promoting research with innovative approaches in SER, the Odyssey 2024 Speech Emotion Recognition Challenge was organized as part of the O",
+      "authors": [
+        "Federico Costa",
+        "Miquel India",
+        "Javier Hernando"
+      ],
+      "published": "2024-06-15",
+      "source": "arxiv"
+    },
+    {
+      "title": "Developing Acoustic Models for Automatic Speech Recognition in Swedish",
+      "link": "http://arxiv.org/abs/2404.16547v1",
+      "snippet": "This paper is concerned with automatic continuous speech recognition using trainable systems. The aim of this work is to build acoustic models for spoken Swedish. This is done employing hidden Markov models and using the SpeechDat database to train their parameters. Acoustic modeling has been worked",
+      "authors": [
+        "Giampiero Salvi"
+      ],
+      "published": "2024-04-25",
+      "source": "arxiv"
+    },
+    {
+      "title": "Towards Estimating the Upper Bound of Visual-Speech Recognition: The Visual Lip-Reading Feasibility Database",
+      "link": "http://arxiv.org/abs/1704.08028v1",
+      "snippet": "Speech is the most used communication method between humans and it involves the perception of auditory and visual channels. Automatic speech recognition focuses on interpreting the audio signals, although the video can provide information that is complementary to the audio. Exploiting the visual inf",
+      "authors": [
+        "Adriana Fernandez-Lopez",
+        "Oriol Martinez",
+        "Federico M. Sukno"
+      ],
+      "published": "2017-04-26",
+      "source": "arxiv"
+    },
+    {
+      "title": "Deep Long Short-Term Memory Adaptive Beamforming Networks For Multichannel Robust Speech Recognition",
+      "link": "http://arxiv.org/abs/1711.08016v1",
+      "snippet": "Far-field speech recognition in noisy and reverberant conditions remains a challenging problem despite recent deep learning breakthroughs. This problem is commonly addressed by acquiring a speech signal from multiple microphones and performing beamforming over them. In this paper, we propose to use ",
+      "authors": [
+        "Zhong Meng",
+        "Shinji Watanabe",
+        "John R. Hershey",
+        "Hakan Erdogan"
+      ],
+      "published": "2017-11-21",
+      "source": "arxiv"
+    },
+    {
+      "title": "Modified SPLICE and its Extension to Non-Stereo Data for Noise Robust Speech Recognition",
+      "link": "http://arxiv.org/abs/1307.4048v1",
+      "snippet": "In this paper, a modification to the training process of the popular SPLICE algorithm has been proposed for noise robust speech recognition. The modification is based on feature correlations, and enables this stereo-based algorithm to improve the performance in all noise conditions, especially in un",
+      "authors": [
+        "D. S. Pavan Kumar",
+        "N. Vishnu Prasad",
+        "Vikas Joshi",
+        "S. Umesh"
+      ],
+      "published": "2013-07-15",
+      "source": "arxiv"
+    },
+    {
+      "title": "A Dual-Branch Parallel Network for Speech Enhancement and Restoration",
+      "link": "http://arxiv.org/abs/2409.08702v2",
+      "snippet": "We present a novel general speech restoration model, DBP-Net (dual-branch parallel network), designed to effectively handle complex real-world distortions including noise, reverberation, and bandwidth degradation. Unlike prior approaches that rely on a single processing path or separate models for e",
+      "authors": [
+        "Da-Hee Yang",
+        "Dail Kim",
+        "Joon-Hyuk Chang",
+        "Jeonghwan Choi",
+        "Han-gil Moon"
+      ],
+      "published": "2024-09-13",
+      "source": "arxiv"
+    },
+    {
+      "title": "Improving Children's Speech Recognition by Fine-tuning Self-supervised Adult Speech Representations",
+      "link": "http://arxiv.org/abs/2211.07769v1",
+      "snippet": "Children's speech recognition is a vital, yet largely overlooked domain when building inclusive speech technologies. The major challenge impeding progress in this domain is the lack of adequate child speech corpora; however, recent advances in self-supervised learning have created a new opportunity ",
+      "authors": [
+        "Renee Lu",
+        "Mostafa Shahin",
+        "Beena Ahmed"
+      ],
+      "published": "2022-11-14",
+      "source": "arxiv"
+    },
+    {
+      "title": "Sagalee: an Open Source Automatic Speech Recognition Dataset for Oromo Language",
+      "link": "http://arxiv.org/abs/2502.00421v1",
+      "snippet": "We present a novel Automatic Speech Recognition (ASR) dataset for the Oromo language, a widely spoken language in Ethiopia and neighboring regions. The dataset was collected through a crowd-sourcing initiative, encompassing a diverse range of speakers and phonetic variations. It consists of 100 hour",
+      "authors": [
+        "Turi Abu",
+        "Ying Shi",
+        "Thomas Fang Zheng",
+        "Dong Wang"
+      ],
+      "published": "2025-02-01",
+      "source": "arxiv"
+    },
+    {
+      "title": "Semantic speech retrieval with a visually grounded model of untranscribed speech",
+      "link": "http://arxiv.org/abs/1710.01949v2",
+      "snippet": "There is growing interest in models that can learn from unlabelled speech paired with visual context. This setting is relevant for low-resource speech processing, robotics, and human language acquisition research. Here we study how a visually grounded speech model, trained on images of scenes paired",
+      "authors": [
+        "Herman Kamper",
+        "Gregory Shakhnarovich",
+        "Karen Livescu"
+      ],
+      "published": "2017-10-05",
+      "source": "arxiv"
+    },
+    {
+      "title": "Federated Representation Learning for Automatic Speech Recognition",
+      "link": "http://arxiv.org/abs/2308.02013v2",
+      "snippet": "Federated Learning (FL) is a privacy-preserving paradigm, allowing edge devices to learn collaboratively without sharing data. Edge devices like Alexa and Siri are prospective sources of unlabeled audio data that can be tapped to learn robust audio representations. In this work, we bring Self-superv",
+      "authors": [
+        "Guruprasad V Ramesh",
+        "Gopinath Chennupati",
+        "Milind Rao",
+        "Anit Kumar Sahu",
+        "Ariya Rastrow",
+        "Jasha Droppo"
+      ],
+      "published": "2023-08-03",
+      "source": "arxiv"
+    },
+    {
+      "title": "Speech Pattern based Black-box Model Watermarking for Automatic Speech Recognition",
+      "link": "http://arxiv.org/abs/2110.09814v2",
+      "snippet": "As an effective method for intellectual property (IP) protection, model watermarking technology has been applied on a wide variety of deep neural networks (DNN), including speech classification models. However, how to design a black-box watermarking scheme for automatic speech recognition (ASR) mode",
+      "authors": [
+        "Haozhe Chen",
+        "Weiming Zhang",
+        "Kunlin Liu",
+        "Kejiang Chen",
+        "Han Fang",
+        "Nenghai Yu"
+      ],
+      "published": "2021-10-19",
+      "source": "arxiv"
+    },
+    {
+      "title": "Audio-visual Speech Enhancement Using Conditional Variational Auto-Encoders",
+      "link": "http://arxiv.org/abs/1908.02590v3",
+      "snippet": "Variational auto-encoders (VAEs) are deep generative latent variable models that can be used for learning the distribution of complex data. VAEs have been successfully used to learn a probabilistic prior over speech signals, which is then used to perform speech enhancement. One advantage of this gen",
+      "authors": [
+        "Mostafa Sadeghi",
+        "Simon Leglaive",
+        "Xavier Alameda-PIneda",
+        "Laurent Girin",
+        "Radu Horaud"
+      ],
+      "published": "2019-08-07",
+      "source": "arxiv"
+    },
+    {
+      "title": "Abusive and Threatening Language Detection in Urdu using Supervised Machine Learning and Feature Combinations",
+      "link": "http://arxiv.org/abs/2204.03062v1",
+      "snippet": "This paper presents the system descriptions submitted at the FIRE Shared Task 2021 on Urdu's Abusive and Threatening Language Detection Task. This challenge aims at automatically identifying abusive and threatening tweets written in Urdu. Our submitted results were selected for the third recognition",
+      "authors": [
+        "Muhammad Humayoun"
+      ],
+      "published": "2022-04-06",
+      "source": "arxiv"
+    },
+    {
+      "title": "Joint Optimization of Streaming and Non-Streaming Automatic Speech Recognition with Multi-Decoder and Knowledge Distillation",
+      "link": "http://arxiv.org/abs/2405.13514v1",
+      "snippet": "End-to-end (E2E) automatic speech recognition (ASR) can operate in two modes: streaming and non-streaming, each with its pros and cons. Streaming ASR processes the speech frames in real-time as it is being received, while non-streaming ASR waits for the entire speech utterance; thus, professionals m",
+      "authors": [
+        "Muhammad Shakeel",
+        "Yui Sudo",
+        "Yifan Peng",
+        "Shinji Watanabe"
+      ],
+      "published": "2024-05-22",
+      "source": "arxiv"
+    }
+  ],
+  "analysis": "**Research Brief: Automatic Speech Recognition (ASR) and Multi-Speaker Speech Processing**\n\nAutomatic Speech Recognition (ASR) has become increasingly important in various applications, including voice assistants, speech synthesis, and natural language processing. Recent advances in deep learning and audio signal processing have enabled the development of robust ASR systems that can accurately recognize spoken words and phrases from various acoustic features.\n\n**Multi-Speaker Speech Processing**\n\nSpeech is a complex phenomenon that involves multiple speakers with distinct speaking styles, accents, and dialects. Accurately recognizing speech in multi-speaker environments is challenging due to the varying acoustic characteristics of each speaker's voice. Traditional ASR systems often require large amounts of training data to learn from, which can be difficult to obtain for multi-speaker datasets.\n\n**Recent Advances**\n\nSeveral recent advances have addressed the challenges of ASR and multi-speaker speech processing:\n\n1. **Multi-Decoder ASR**: This approach uses multiple neural networks to predict the output of each decoder simultaneously. By averaging the predictions across decoders, multi-decoder ASR systems can capture more complex patterns in the acoustic features.\n2. **Knowledge Distillation**: This method involves transferring knowledge from a teacher model to a student model with lower capacity and better performance. Knowledge distillation has been shown to improve the efficiency of speech recognition systems.\n3. **Multi-Decoder Multi-Speaker ASR**: These systems use multiple decoders to predict the output for each speaker simultaneously, taking advantage of the diversity in speaking styles and accents.\n\n**Research Directions**\n\nSeveral research directions can be explored to further advance ASR and multi-speaker speech processing:\n\n1. **Multimodal Fusion**: Integrating multiple modalities, such as acoustic features, text information, and visual context, to improve ASR performance.\n2. **Transfer Learning**: Applying pre-trained models from other domains or tasks to adapt to new datasets or applications.\n3. **Hybrid Models**: Combining multiple ASR and multi-speaker speech processing methods, such as using audio-visual feedback or speaker identification.\n\n**Real-World Applications**\n\nASR and multi-speaker speech processing have numerous real-world applications:\n\n1. **Voice Assistants**: Automatic speech recognition is used in virtual assistants like Siri, Alexa, and Google Assistant.\n2. **Speech Synthesis**: Voice synthesis systems use ASR to generate synthesized speech for various applications, including e-learning platforms and audiobooks.\n3. **Natural Language Processing (NLP)**: Multi-speaker speech processing enables more accurate NLP tasks, such as sentiment analysis, entity recognition, and language translation.\n\n**Challenges and Limitations**\n\nDespite recent advances, ASR and multi-speaker speech processing still face challenges and limitations:\n\n1. **Data Quality**: High-quality training data is essential for improving ASR performance.\n2. **Speaker Variability**: Accurate recognition of diverse speaking styles and accents can be challenging.\n3. **Noise and Interference**: Robust noise reduction and interference mitigation techniques are necessary to ensure accurate speech recognition.\n\n**Future Research Directions**\n\nTo further advance ASR and multi-speaker speech processing, future research directions include:\n\n1. **Developing Multimodal Fusion Strategies**: Designing efficient fusion strategies that integrate multiple modalities.\n2. **Exploring Transfer Learning Techniques**: Investigating transfer learning methods for adapting pre-trained models to new datasets or applications.\n3. **Improving Speaker Identification and Recognition**: Developing more accurate speaker identification and recognition systems.\n\nBy exploring these research directions, we can further improve ASR and multi-speaker speech processing, enabling more sophisticated and robust applications in various fields."
+}
