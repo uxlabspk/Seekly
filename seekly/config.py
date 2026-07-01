@@ -4,7 +4,7 @@ from dataclasses import dataclass
 @dataclass
 class Config:
     # Model configuration
-    MODEL_NAME: str = "llama3.2:1b"
+    MODEL_NAME: str = "qwen3.5:4b"
     
     # Search configuration
     MAX_SEARCH_RESULTS: int = 50
