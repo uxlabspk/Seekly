@@ -30,7 +30,7 @@ function TokenBlock({ token }: { token: MdToken }): React.ReactNode {
       return (
         <Box marginTop={depth <= 2 ? 1 : 0} marginBottom={0}>
           <Text bold color={color}>
-            {"#".repeat(depth)} {token.text}
+            {token.text}
           </Text>
         </Box>
       );

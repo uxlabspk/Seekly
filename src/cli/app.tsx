@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect, useCallback, useRef } from "react";
 import { Box, Text, useApp } from "ink";
 import { Header, Progress, StatusLine, COLORS } from "./theme/index.js";
 import { AgentRuntime, type AgentCallbacks } from "../agent/agent.js";
@@ -22,10 +22,13 @@ export const App: React.FC<AppProps> = ({ question: initialQuestion, outputFile 
   const [state, setState] = useState<AgentState>("IDLE");
   const [sources, setSources] = useState(0);
   const [elapsed, setElapsed] = useState("00:00");
-  const [tokens, setTokens] = useState("");
+  const [streaming, setStreaming] = useState("");
   const [output, setOutput] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [waitingForInput, setWaitingForInput] = useState(!initialQuestion);
+  const [sessionId, setSessionId] = useState<string | null>(null);
+  const stateRef = useRef(state);
+  stateRef.current = state;
 
   const runResearch = useCallback(async (q: string) => {
     const config = getConfig();
@@ -60,8 +63,15 @@ export const App: React.FC<AppProps> = ({ question: initialQuestion, outputFile 
       tools.register(retrieveUrlTool);
 
       const callbacks: AgentCallbacks = {
-        onStateChange: (s) => setState(s),
-        onToken: (t) => setTokens((prev) => prev + t),
+        onStateChange: (s) => {
+          setState(s);
+          if (s === "SYNTHESIZING") setStreaming("");
+        },
+        onToken: (t) => {
+          if (stateRef.current === "SYNTHESIZING" || stateRef.current === "COMPLETED") {
+            setStreaming((prev) => prev + t);
+          }
+        },
         onEvent: (e) => {
           if (e.type === "source.discovered") {
             setSources((e.data.total as number) ?? 0);
@@ -70,6 +80,7 @@ export const App: React.FC<AppProps> = ({ question: initialQuestion, outputFile 
       };
 
       const agent = new AgentRuntime(provider, tools, q, 12, callbacks);
+      setSessionId(agent.getSessionId());
       const result = await agent.run();
       // ponytail: if model still outputs JSON, convert to markdown
       const draft = result.draft.trim().startsWith("{") ? jsonToMarkdown(result.draft) : result.draft;
@@ -154,6 +165,20 @@ export const App: React.FC<AppProps> = ({ question: initialQuestion, outputFile 
           <Text color={COLORS.success}>✓ Research complete</Text>
         </Box>
         <Markdown content={output} />
+      </Box>
+    );
+  }
+
+  if (streaming && state === "SYNTHESIZING") {
+    return (
+      <Box flexDirection="column" padding={1}>
+        <Header />
+        <Box marginY={1}>
+          <Text color={COLORS.accent}>● Writing report...</Text>
+        </Box>
+        <Box>
+          <Text>{streaming}</Text>
+        </Box>
       </Box>
     );
   }
