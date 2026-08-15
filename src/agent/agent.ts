@@ -219,7 +219,7 @@ export class AgentRuntime {
 
     const response = await this.collectText({
       messages: this.context.getMessages(),
-      max_tokens: 4096,
+      max_tokens: 16384,
     });
 
     if (response.trim()) return response;

@@ -19,7 +19,7 @@ export class LlamaCppProvider implements ModelProvider {
       messages: request.messages,
       tools: request.tools,
       temperature: request.temperature ?? 0.7,
-      max_tokens: request.max_tokens ?? 4096,
+      max_tokens: request.max_tokens ?? 16384,
       stream: true,
       model: this.model,
     };
@@ -28,7 +28,7 @@ export class LlamaCppProvider implements ModelProvider {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(body),
-      signal: AbortSignal.timeout(120_000),
+      signal: AbortSignal.timeout(300_000),
     });
 
     if (!res.ok) {
