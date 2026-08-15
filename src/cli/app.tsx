@@ -26,9 +26,12 @@ export const App: React.FC<AppProps> = ({ question: initialQuestion, outputFile 
   const [output, setOutput] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [waitingForInput, setWaitingForInput] = useState(!initialQuestion);
+  const [inputBuffer, setInputBuffer] = useState("");
   const [sessionId, setSessionId] = useState<string | null>(null);
   const stateRef = useRef(state);
   stateRef.current = state;
+  const inputBufferRef = useRef(inputBuffer);
+  inputBufferRef.current = inputBuffer;
 
   const runResearch = useCallback(async (q: string) => {
     const config = getConfig();
@@ -115,29 +118,25 @@ export const App: React.FC<AppProps> = ({ question: initialQuestion, outputFile 
     stdin.resume();
     stdin.setEncoding("utf-8");
 
-    let buffer = "";
     const onData = (chunk: string) => {
+      const currentBuffer = inputBufferRef.current;
       if (chunk === "\r") {
-        if (buffer.trim()) {
-          setQuestion(buffer.trim());
+        if (currentBuffer.trim()) {
+          setQuestion(currentBuffer.trim());
           setWaitingForInput(false);
-          runResearch(buffer.trim());
+          runResearch(currentBuffer.trim());
         }
-        buffer = "";
+        setInputBuffer("");
       } else if (chunk === "\u0003") {
         exit();
       } else if (chunk === "\u007F") {
-        buffer = buffer.slice(0, -1);
-        process.stdout.write("\r\x1b[K> " + buffer);
+        setInputBuffer((prev) => prev.slice(0, -1));
       } else {
-        buffer += chunk;
-        process.stdout.write("\r\x1b[K> " + buffer);
+        setInputBuffer((prev) => prev + chunk);
       }
     };
 
     stdin.on("data", onData);
-    process.stdout.write("\n> ");
-
     return () => {
       stdin.removeListener("data", onData);
       stdin.setRawMode?.(false);
@@ -189,6 +188,9 @@ export const App: React.FC<AppProps> = ({ question: initialQuestion, outputFile 
         <Header />
         <Box marginY={1}>
           <Text color={COLORS.dim}>Type your research question and press Enter</Text>
+        </Box>
+        <Box borderStyle="round" borderColor={COLORS.primary} paddingX={1}>
+          <Text>{inputBuffer}</Text>
         </Box>
       </Box>
     );

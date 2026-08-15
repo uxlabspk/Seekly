@@ -16,7 +16,7 @@ interface HeaderProps {
 }
 
 export const Header: React.FC<HeaderProps> = ({ title = "Seekly" }) => (
-  <Box borderStyle="round" borderColor={COLORS.primary} paddingX={1}>
+  <Box paddingX={1}>
     <Text bold color={COLORS.primary}>
       {title}
     </Text>
