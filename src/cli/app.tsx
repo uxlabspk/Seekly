@@ -28,16 +28,23 @@ export const App: React.FC<AppProps> = ({ question: initialQuestion, outputFile 
   const [waitingForInput, setWaitingForInput] = useState(!initialQuestion);
   const [inputBuffer, setInputBuffer] = useState("");
   const [sessionId, setSessionId] = useState<string | null>(null);
+  const [cursorVisible, setCursorVisible] = useState(true);
   const stateRef = useRef(state);
   stateRef.current = state;
   const inputBufferRef = useRef(inputBuffer);
   inputBufferRef.current = inputBuffer;
 
+  // Cursor blink
+  useEffect(() => {
+    if (!waitingForInput) return;
+    const id = setInterval(() => setCursorVisible((v) => !v), 530);
+    return () => clearInterval(id);
+  }, [waitingForInput]);
+
   const runResearch = useCallback(async (q: string) => {
     const config = getConfig();
     const startTime = Date.now();
 
-    // Timer
     const timer = setInterval(() => {
       const secs = Math.floor((Date.now() - startTime) / 1000);
       const m = String(Math.floor(secs / 60)).padStart(2, "0");
@@ -51,11 +58,10 @@ export const App: React.FC<AppProps> = ({ question: initialQuestion, outputFile 
         model: config.modelName,
       });
 
-      // Health check
       const healthy = await provider.healthCheck();
       if (!healthy) {
         setError(
-          `Seekly could not connect to the local model.\n\nExpected:\n${config.modelUrl}\n\nStart your llama.cpp server and try again.`
+          `Model not reachable at ${config.modelUrl}\n\nStart llama-server and try again.`
         );
         clearInterval(timer);
         return;
@@ -85,11 +91,9 @@ export const App: React.FC<AppProps> = ({ question: initialQuestion, outputFile 
       const agent = new AgentRuntime(provider, tools, q, 12, callbacks);
       setSessionId(agent.getSessionId());
       const result = await agent.run();
-      // ponytail: if model still outputs JSON, convert to markdown
       const draft = result.draft.trim().startsWith("{") ? jsonToMarkdown(result.draft) : result.draft;
       setOutput(draft);
 
-      // Save draft to file
       if (outputFile) {
         fs.writeFileSync(outputFile, draft, "utf-8");
       } else {
@@ -110,7 +114,6 @@ export const App: React.FC<AppProps> = ({ question: initialQuestion, outputFile 
     }
   }, [initialQuestion, runResearch]);
 
-  // Interactive input mode
   useEffect(() => {
     if (!waitingForInput) return;
     const stdin = process.stdin;
@@ -148,10 +151,12 @@ export const App: React.FC<AppProps> = ({ question: initialQuestion, outputFile 
     return (
       <Box flexDirection="column" padding={1}>
         <Header />
-        <Box marginY={1}>
+        <Box marginTop={1} borderStyle="round" borderColor={COLORS.error} paddingX={1}>
           <Text color={COLORS.error}>{error}</Text>
         </Box>
-        <Text color={COLORS.dim}>Press any key to exit</Text>
+        <Box marginTop={1}>
+          <Text color={COLORS.dim}>Press Ctrl+C to exit</Text>
+        </Box>
       </Box>
     );
   }
@@ -160,10 +165,16 @@ export const App: React.FC<AppProps> = ({ question: initialQuestion, outputFile 
     return (
       <Box flexDirection="column" padding={1}>
         <Header />
-        <Box marginY={1}>
-          <Text color={COLORS.success}>✓ Research complete</Text>
+        <Box marginTop={1} marginBottom={1}>
+          <Text color={COLORS.success} bold>✓ </Text>
+          <Text color={COLORS.bold}>Research complete</Text>
+          <Text color={COLORS.dim}> · </Text>
+          <Text color={COLORS.muted}>{sources} sources</Text>
         </Box>
         <Markdown content={output} />
+        <Box marginTop={1}>
+          <Text color={COLORS.dim}>Press Ctrl+C to exit</Text>
+        </Box>
       </Box>
     );
   }
@@ -172,8 +183,9 @@ export const App: React.FC<AppProps> = ({ question: initialQuestion, outputFile 
     return (
       <Box flexDirection="column" padding={1}>
         <Header />
-        <Box marginY={1}>
-          <Text color={COLORS.accent}>● Writing report...</Text>
+        <Box marginTop={1} marginBottom={1}>
+          <Text color={COLORS.accent} bold>◆ </Text>
+          <Text color={COLORS.bold}>Writing report...</Text>
         </Box>
         <Box>
           <Text>{streaming}</Text>
@@ -186,11 +198,16 @@ export const App: React.FC<AppProps> = ({ question: initialQuestion, outputFile 
     return (
       <Box flexDirection="column" padding={1}>
         <Header />
-        <Box marginY={1}>
-          <Text color={COLORS.dim}>Type your research question and press Enter</Text>
+        <Box marginTop={1} marginBottom={1}>
+          <Text color={COLORS.dim}>Ask anything — I'll research it for you</Text>
         </Box>
         <Box borderStyle="round" borderColor={COLORS.primary} paddingX={1}>
+          <Text color={COLORS.accent}>❯ </Text>
           <Text>{inputBuffer}</Text>
+          <Text color={cursorVisible ? COLORS.accent : COLORS.dim}>▌</Text>
+        </Box>
+        <Box marginTop={1}>
+          <Text color={COLORS.dim}>Enter to submit · Ctrl+C to exit</Text>
         </Box>
       </Box>
     );
@@ -206,7 +223,6 @@ export const App: React.FC<AppProps> = ({ question: initialQuestion, outputFile 
   );
 };
 
-// ponytail: fallback for models that output JSON instead of Markdown
 function jsonToMarkdown(raw: string): string {
   try {
     const json = JSON.parse(raw);

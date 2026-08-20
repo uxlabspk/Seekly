@@ -19,26 +19,31 @@ Ask a question. Get a research report with sources, citations, and evidence — 
 ```
 $ seekly
 
-  Seekly
+             ⬡ Seekly v0.1.0
+       ────────────────────────────────────────────────
 
- Type your research question and press Enter
+  Ask anything — I'll research it for you
 
- ╭───────────────────────────────────────────────────────╮
- │ what are tokenizers                                   │
- ╰───────────────────────────────────────────────────────╯
+  ╭───────────────────────────────────────────────────────╮
+  ❯ what are tokenizers?▌                                 │
+  ╰───────────────────────────────────────────────────────╯
+
+  Enter to submit · Ctrl+C to exit
 
 
-   Seekly
+             ⬡ Seekly v0.1.0
+       ────────────────────────────────────────────────
 
- what are tokenizers?
+  what are tokenizers?
 
- ✓ Planning
- ● Web search 0 sources
- ○ Evidence extraction
- ○ Verification
- ○ Synthesis
+  ✓ Planning
+  ◆ Searching 3 sources
+  ○ Retrieving
+  ○ Extracting
+  ○ Verifying
+  ○ Synthesizing
 
- Elapsed 00:06
+  [████████████░░░░░░░░░░░░░░░░░░] 33%  00:12
 ```
 
 ## Features
